@@ -4,15 +4,17 @@
 
 ## Prerequsites
 
+- Create a Python 3.4 (or above) [virtual environment](https://docs.python.org/3/library/venv.html).
 - Assume the *Mosquitto Broker* is configured, up and running. 
-- Assume Mosquitto and AWS IoT certificates and configuration is all setup. 
+- Assume Mosquitto and AWS IoT certificates and configuration is all setup.
+  - Put the AWS IoT certificates in a folder named *certs.awsiot/*.
+  - Put any required Mosquitto certificates in a folder named *certs.mosquitto/*.
 - See [Mosquitto README](README.mosquitto.md) and [AWS IoT README](README.awsiot.md).
 
 The Datashipper `mosquitto_awsiot_datashipper.py` and Publisher `mosquitto_awsiot_publisher.py` rely
-on the following python packages:
+on the *paho-mqtt* and *AWSIoTPythonSDK* packages. Install them by running
 ```bash
-sudo pip install -U paho-mqtt
-sudo pip install -U AWSIoTPythonSDK
+pip install -r requirements.txt
 ```
 
 ## Example Usage
