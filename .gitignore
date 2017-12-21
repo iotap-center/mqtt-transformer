@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -86,6 +87,7 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
+myenv/
 
 # Spyder project settings
 .spyderproject
@@ -99,3 +101,14 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# certificates and friends
+certs/
+certs.*/
+config/awsiot.json
+
+# swap files
+*swp
+
+# crummy history
+*old

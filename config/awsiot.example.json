@@ -1,0 +1,8 @@
+{
+    "client_name": "",
+    "https_endpoint": "",
+    "port": 8883,
+    "root_cert": "",
+    "private_key": "",
+    "thing_cert": ""
+}
