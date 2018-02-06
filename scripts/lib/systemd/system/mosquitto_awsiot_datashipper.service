@@ -1,0 +1,11 @@
+[Unit]
+Description=Mosquitto AWS Datashipper
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/home/pi/IoT/mosquitto_awsiot_datashipper/myenv/bin/python3 /home/pi/IoT/mosquitto_awsiot_datashipper/mosquitto_awsiot_datashipper.py
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target

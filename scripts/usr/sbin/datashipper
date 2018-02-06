@@ -1,0 +1,6 @@
+#!/bin/bash
+
+app="/home/pi/IoT/mosquitto_awsiot_datashipper/"
+pythonEnv=${app}"myenv/bin/"
+source ${pythonEnv}"activate"
+"python" "${app}mosquitto_awsiot_datashipper.py"
